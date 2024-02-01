@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    overflow-x: hidden;
+    background-image: radial-gradient(circle, #faf7f3,#e6dfd5,#d2c7b8,#beb09c,#aa9981)
+}
+.ristorante1
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.R1L
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.R1L h1{
+    font-family: Choco Belgium;
+    background:linear-gradient(To right, #463725 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-size: 75px;
+}
+.R1L h4{
+    font-family: Handle Changer;
+    font-size: 20px;
+    margin-top: 20px;
+    background:linear-gradient(To right, #413423 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.R1D
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.R1D img{
+    width: 500px;
+    position: relative;
+    bottom: -10%;
+    border-radius: 20px;
+}
+.ristorante2
+{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxRistorante
+{
+    width: 60%;
+    height: 90%;
+}
+.boxRistorante h4
+{
+    text-align: center;
+    font-family: Choco Belgium;
+    margin-bottom: 20px;
+    color: #413423;
+}
+.boxRistorante h2
+{
+    text-align: center;
+    font-family: Handle Changer;
+    margin-bottom: 20px;
+    color: #aa9981;
+}
+.boxRistorante h2 span
+{
+    color: #554734;
+}
+.boxRistorante p
+{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 15px;
+    font-family: "Noto Serif Display";
+    color: #463725;
+}
+.Ristorante2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+} 
+.boxRistorante2
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.boxRistorante2 h1{
+    font-family: Romantic Quick;
+    background:linear-gradient(To right, #463725 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+} 
+#line1{
+    border-bottom: 2px solid #bba07b;
+    width: 39%;
+    margin-top: 5px;
+
+}
+#line2{
+    border-bottom: 2px solid #685439;
+    width: 26%;
+    margin-top: 5px;
+
+}
+#line3{
+    border-bottom: 2px solid #bba07b;
+    width: 13%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.boxRistorante2 h5
+{
+    font-size: 20px;
+    color: #aa9981;
+    font-family: "Noto Serif Display";
+}
+.boxRistorante2 span{
+    color: #554734;
+}
+.boxRistorante2 p{
+    width: 70%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Noto Serif Display";
+    color: #413423;
+    margin-bottom: 20px;
+}
+.boxRestaurantImage
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxR
+{
+    width: 300px;
+    height: 150px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+.boxR:hover
+{
+    transform: scale(1.1);
+}
+.boxR h4
+{
+    color: #ffecd2;
+    border: 2px solid #ffecd2;
+    padding: 10px 15px;
+}
+#boxR1
+{
+    background: url(foto/cibo/27.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#boxR2
+{
+    background: url(foto/cibo/18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#boxR3
+{
+    background: url(foto/cibo/10.jpg);
+    background-size: cover;
+    background-position: center;
+}

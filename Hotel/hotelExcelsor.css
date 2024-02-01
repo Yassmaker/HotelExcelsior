@@ -1,0 +1,631 @@
+@font-face {
+    font-family: Handle Changer;
+    src: url(HandleChangeDemoRegular.ttf);
+}
+@font-face {
+    font-family: Choco Belgium;
+    src: url(ChocoBelgiumDemoRegular.ttf);
+}
+@font-face {
+    font-family: Romantic Quick;
+    src: url(RomanticQuickDemoRegular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    /*background-image: radial-gradient(circle, #faf7f3,#e6dfd5,#d2c7b8,#beb09c,#aa9981);*/
+    overflow-x: hidden;
+}
+header
+{
+    height: 22vh;
+    width: 100vw;
+    display: flex;
+    border-bottom: 2px solid rgba(170,153,129,0.8);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 1000;
+}
+
+.navLeft{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLeft img {
+    width: 130px;
+}
+.navRight{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navRight a{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 40px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: .5s linear;
+    color: #bba07b;
+    font-family: Handle Changer;
+}
+.navRight li {
+    margin-left: 5px;
+}
+.navRight a:hover {
+    color: #bba07b;
+    border-bottom: 2px solid #AA9981;
+    transform: translateY(5px);
+}
+header div img{
+    -webkit-box-shadow: 0px 0px 49px 9px rgba(170,153,129,0.63); 
+    box-shadow: 0px 0px 49px 9px rgba(170,153,129,0.63);
+}
+.welcome{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #e6dfd5;
+}
+#textWelcomeh1
+{
+    font-family: Choco Belgium;
+    font-size: 75px;
+    background:linear-gradient(To right, #685439 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-align: center;
+}
+#textWelcomeh2
+{
+    font-family: Handle Changer;
+    font-size: 25px;
+    background:linear-gradient(To right, #685439 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+#line1{
+    color: #817057;
+    border-bottom: 2px solid #685439;
+    width: 35%;
+}
+#line2{
+    border-bottom: 2px solid #bba07b;
+    width: 26.25%;
+    margin-top: 5px;
+
+}
+#line3{
+    border-bottom: 2px solid #685439;
+    width: 17.5%;
+    margin-top: 5px;
+
+}
+#line4{
+    border-bottom: 2px solid #bba07b;
+    width: 8.75%;
+    margin-top: 5px;
+}
+#south
+{
+    color: #685439;
+    font-size: 40px;
+    position: relative;
+    top: 25%;
+}
+.presentation{
+    height: 100vh;
+    width: 100vw;
+}
+.boxPresentation
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #faf7f3;
+}
+.boxLeftPresentation{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxLeftPresentation img{
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+}
+.boxRightPresentation
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BRPText
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+    margin-right: 50px;
+}
+#TextRightPresentation{
+    font-family: Romantic Quick;
+    font-size: 28px;
+    color: #685439; 
+}
+#TextRightPresentationH2{
+    font-family: Romantic Quick;
+    margin-top: 5px;
+    font-size: 28px;
+    color: #685439;
+}
+#TextRightPresentationH2 span{
+    color: #bba07b;
+}
+#PRightPresentation
+{
+    margin-top: 20px;
+    font-family: "Noto Serif Display";
+    font-size: 16px;
+    text-align: left;
+    color: #AA9981;
+}
+.presentationAboutHotel {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #AA9981;
+}
+
+.carousel {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    width: 550px;
+    height: 350px;
+    border-radius: 60px 0 60px 0;
+}
+
+.textLeft {
+    width: 50%;
+    height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textLeftBox
+{
+	width: 80%;
+	height:60%;
+}
+.textLeftBox h1
+{
+	font-family: Romantic Quick;
+    font-size: 38px;
+    color: #685439; 
+	text-align:center;
+}
+.textLeftBox h2
+{
+    font-family: Romantic Quick;
+    font-size: 30px;
+    color: #685439; 
+	text-align:center;
+}
+.textLeftBox h2 span{
+	color: 	#deb887;
+}
+.textLeftBox p
+{
+	font-family: "Noto Serif Display";
+    font-size: 17px;
+    margin-top: 15px;
+	color: 	#fff8dc;
+}
+.InfoExtra
+{
+    padding: 10px 20px ;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Noto Serif Display";
+    border: 2px solid #ffe4c0;
+    color: #ffe4c0;
+    background-color: #685439;
+    transition: .5s ease-in-out;
+}
+.InfoExtra:hover{
+    background-color: #ffe4c0 ;
+    color: #685439;
+    border-color: #685439;
+}
+.ReservationRoom{
+	width: 100vw;
+	height:100vh;
+	background: #e6dfd5;
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    width: 100%;
+	height:25%;
+    margin-top: 50px;
+}
+.ReservationRoom #ReservationRoomh2{
+    font-family: Handle Changer;
+    font-size: 25px;
+    background:linear-gradient(To right, #685439 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    text-align: center;
+    color: transparent; 
+}
+.ReservationRoom #ReservationRoomh1{
+    font-family: Choco Belgium;
+    font-size: 40px;
+    background:linear-gradient(To right, #685439 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-align: center;
+}
+.ReservationRoom1
+{ 
+	width: 100%;
+	height:75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box{
+	width: 350px;
+	height:350px;
+    margin: 20px;
+    border: 2px solid #685439;
+    border-radius: 5px;
+    font-family: "Noto Serif Display";
+    color: #0f0d0a;
+    letter-spacing: 1px;
+}
+.box #top{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    border-bottom: 2px solid #685439;
+}
+#top .left
+{
+    width:80%;
+    height: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left h1{
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+.left h3{
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.left span{
+    color: orange;
+}
+.right{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right span{
+    padding: 1px;
+    border: 1.5px solid #ffe4c0;
+    border-radius: 20px;
+    color: #ffe4c0;
+    background-color: #685439;
+    transition: .5s ease-in-out
+}
+.right span:hover{
+    background-color: #ffe4c0 ;
+    color: #685439;
+}
+#box1 #top{
+	background: rgb(104, 84, 57,0.2);
+}
+#box2 #top{
+	background:rgb(104, 84, 57,0.4) ;
+}
+#box3 #top
+{
+	background: rgb(104, 84, 57,0.6);
+}
+#box1 #bottom{
+    width: 100%;
+    height: 65%;
+    background: url(foto/camere/24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#box2 #bottom{
+    width: 100%;
+    height: 65%;
+    background: url(foto/camere/home-camera-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#box3 #bottom{
+    width: 100%;
+    height: 65%;
+    background: url(foto/camere/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.restaurant
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #AA9981;
+    display: flex;
+    flex-direction: column;
+}
+.ResTop
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#textResH3{
+    color: #685439;
+    font-family: "Noto Serif Display";
+    margin-top: 35px;
+	font-size: 30px;
+}
+#textResH1{
+    color: #f1d9b7;
+    margin-top: 15px;
+    font-family: Choco Belgium;
+	font-size: 50px;
+}
+.ResBottom
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.ResLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ResLeft h3{
+    font-family: Romantic Quick;
+    color: #ffd59e;
+	font-size: 40px;
+}
+.ResLeft p{
+    font-size: 16px;
+    color: #fff8dc;
+    padding: 10px 15px;
+    font-family: "Noto Serif Display";
+    text-align: justify;
+	margin-left:50px;
+	margin-right: 30px;
+}
+.ResRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ResRight img
+{
+    width: 450px;
+    border-radius: 40px 0 40px 0;
+}
+footer{
+	width:100vw;
+	height:35vh;
+}
+.footer {
+    width: 100%;
+    height: 100%;
+    background: #e6dfd5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.grid1 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.grid1 h3 {
+    color: #bba07b;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.grid1 a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #817057;
+    transition: .5s ease-in-out;
+}
+
+.grid1 a:hover {
+    color: #4b3c29;
+}
+
+.grid2 {
+    grid-column:2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid2 h3 {
+    color: #bba07b;
+    position: relative;
+    bottom: 20%;
+    font-size: 20px;
+}
+.grid2 p a{
+    text-decoration: none;
+}
+.grid2 p a i
+{
+    font-size: 20px;
+    margin: 7px;
+    border: 1px solid #817057;
+    padding: 10px;
+    border-radius: 100%;
+    color: #817057;
+    background-color: #ffe7c6;
+    transition: .5s ease-in-out;
+}
+.grid2 p a i:hover{
+    background-color: #817057;
+    color: #ffe7c6;
+    transform: translateY(-10px);
+}
+.grid3
+{
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid3 h3{
+    color: #bba07b;
+    position: relative;
+    bottom: 10%;
+    font-size: 20px;
+}
+.grid3 img{
+    width: 200px;
+    border-radius: 10px;
+}
+.grid3 a 
+{
+    text-align: center;
+    color: #817057;
+}
+.grid3 a:hover {
+    color: #4b3c29;
+}
+.grid4{
+    grid-column: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid4 h3{
+    color: #bba07b;
+    font-size: 20px;
+    position: relative;
+    bottom: 15%;
+}
+.grid4 p{
+    color: #817057;
+    position: relative;
+    bottom: 10%;
+    width: 340px;
+}
+.newsletter
+{
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #817057 ;
+}
+.newsletter input{
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+}
+.newsletter input:focus{
+    outline: none;
+    border: none;
+}
+.newsletter button{
+    padding: 5px;
+    border: 1px solid #685439;
+    border-radius: 5px;
+    background-color: #AA9981;
+    color: #fff8dc;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.newsletter button:hover
+{
+    color: #AA9981;
+    background-color: #fff8dc;
+    transform: scale(1.05);
+}
+hr {
+    color: #4b3c29;
+}

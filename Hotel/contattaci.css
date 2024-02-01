@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    overflow-x: hidden;
+    background-image: radial-gradient(circle, #faf7f3,#e6dfd5,#d2c7b8,#beb09c,#aa9981)
+}
+.contattaci1
+{
+    height: 100vh;
+    width: 100vw;
+}
+.box1
+{
+    height: 22vh;
+    width: 100vw;
+}
+.box2
+{
+    height: 30vh;
+    width: 100vw;
+    background: url(foto/header-contact-us.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+}
+.boxBox{
+    width: 15%;
+    height: 50%;
+    background-color: #bba07b;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    border: 2px double #413423;
+}
+.boxBox h4
+{
+    font-family: "Noto Serif Display";
+    font-size: 0.5em;
+    color: #685439; 
+    width: 100%;
+    margin-left: 5px;
+}
+.boxBox h3
+{
+    font-family: Handle Changer;
+    font-size: 1.5em;
+    color: #5c4a32; 
+    margin-left: 10px;
+}
+.box3
+{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box3 h1{
+    font-family:  Romantic Quick;
+    font-size: 2em;
+    color: #5c4a32; 
+}
+.box3 h1 span
+{
+    color: #ad9b83;
+}
+.box3 p
+{
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "Noto Serif Display";
+    color: #413423;
+}
+#line1{
+    margin-top: 20px;
+    color: #817057;
+    border-bottom: 2px solid #685439;
+    width: 20%;
+}
+#line2{
+    border-bottom: 2px solid #bba07b;
+    width: 15%;
+    margin-top: 5px;
+
+}
+#line3{
+    border-bottom: 2px solid #685439;
+    width: 10%;
+    margin-top: 5px;
+
+}
+#line4{
+    border-bottom: 2px solid #bba07b;
+    width: 5%;
+    margin-top: 5px;
+}
+.contattaci2
+{
+    height: 190vh;
+    width: 100vw;
+}
+.box1C2
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box1C2 h2
+{
+    font-family: "Noto Serif Display";
+    font-style: italic;
+    border-bottom: 2px solid #413423;
+    padding: 5px;
+    background:linear-gradient(To right, #685439 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.box1C2 p{
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: "Noto Serif Display";
+    color: #413423;
+}
+.box1C2 h6
+{
+
+    font-style: oblique;
+    font-weight: bold;
+    margin-top: 15px;
+    position: relative;
+    top: 10%;
+}
+.boxInput {
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.form-group2 {
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 10px; 
+    margin-top: 5px;
+}
+.form-group2 label
+{
+    font-size: 0.9em;
+    font-family: "Noto Serif Display";
+    color: #413423;
+}
+.form-group2 input
+{
+    width: 370px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 50px;
+    border-radius: 0%;
+    border: solid 1px #413423;
+    padding-left: 10px;
+    font-family: "Noto Serif Display";
+    color: #5a4831;
+}
+.form-group2 input:focus {
+    outline: none;
+}
+.form-group2 input::placeholder
+{
+    font-size: smaller;
+}
+.form-group2  select
+{
+    width: 370px;
+    height: 25px;
+    margin-right: 50px;
+    margin-top: 5px;
+    border-radius: 0%;
+    border: solid 1px #413423;
+}
+.form-group2  select:focus {
+    outline: none;
+}
+.form-group2 textarea
+{
+    border-radius: 0%;
+    border: solid 1px #413423;
+    padding-left: 5px;
+    font-family: "Noto Serif Display";
+    color: #5a4831;
+    margin-top: 5px;
+}
+.form-group2 textarea:focus {
+    outline: none;
+}
+.form-group2 textarea::placeholder
+{
+    font-size: smaller;
+}
+.form-group2  h1{
+    font-family: "Great Vibes", cursive;
+    background:linear-gradient(To right, #685439 ,rgb(104, 84, 57,0.7));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+#codSecurity
+{
+    margin-right: 150px;
+}
+
+.form-group2  #NuovoCode{
+    font-family: "Noto Serif Display";
+    color: #413423;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+#button
+{
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px ;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Noto Serif Display";
+    border: 2px solid #ffe4c0;
+    color: #ffe4c0;
+    background-color: #685439;
+    transition: .5s ease-in-out;
+}
+#button:hover{
+    background-color: #ffe4c0 ;
+    color: #685439;
+    border-color: #685439;
+}
+
+
+

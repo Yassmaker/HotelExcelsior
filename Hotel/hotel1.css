@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    overflow-x: hidden;
+}
+.hotel1-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentationAboutHotel {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+    z-index: -2;
+}
+
+.presentationAboutHotel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: blur(5px); 
+    z-index: -1;
+}
+.boxFor1stImg {
+    position: absolute; 
+    top:40%; 
+    left: 30%;
+    width: 40%; 
+    height: 40%; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    color: white; 
+    text-align: center; 
+    border: 2px solid #4e3f2b;
+    background-color: #685439;
+    border-radius: 100px 50px 100px  50px;
+}
+
+.boxFor1stImg h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-family: Choco Belgium;
+    color: rgba(207, 178, 137, 0.8);
+}
+
+.boxFor1stImg h3 {
+    font-size: 1.2em;
+    font-family: Romantic Quick;
+    color: #f1d1a4;
+}
+.hotel1-2
+{
+    height: 150vh;
+    width: 100%;
+    background-color: #e6dfd5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr) ;
+}
+.boxHotel1-2
+{
+    grid-row: 1;
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxHotel1-2 h4
+{
+    font-family:  Choco Belgium;
+    font-size: 1em;
+    color: #685439; 
+}
+.boxHotel1-2 h2
+{
+    font-family:  Romantic Quick;
+    font-size: 2em;
+    color: #5c4a32; 
+}
+.boxHotel1-2 p 
+{
+    width: 700px;
+    font-family: "Noto Serif Display";
+    margin-top: 1.5em;
+    text-align: center;
+    color: #85735a;
+}
+.boxHotel1-3{
+    grid-row: 2 / 4;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxHotel1-3 img{
+    width: 600px;
+}
+.boxHotel1-4
+{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxHotel1-4 h3{
+    font-family:  Romantic Quick;
+    font-size: 1em;
+    color: #4e3f2b; 
+}
+.boxHotel1-4 p{
+    width: 90%;
+    font-family: "Noto Serif Display";
+    margin-top: 1.5em;
+    text-align: center;
+    color: #776955;
+}
+.boxHotel1-5
+{
+    grid-row: 3;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxHotel1-5 h3{
+    font-family:  Romantic Quick;
+    font-size: 1em;
+    color: #4e3f2b; 
+}
+.boxHotel1-5 p{
+    width: 90%;
+    font-family: "Noto Serif Display";
+    margin-top: 1.5em;
+    text-align: center;
+    color: #776955;
+}
